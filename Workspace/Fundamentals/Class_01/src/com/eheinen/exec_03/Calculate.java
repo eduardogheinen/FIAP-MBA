@@ -16,12 +16,12 @@ public class Calculate {
 	public Calculate(){
 		for(int i=0; i<10; i++){
 			Random rn = new Random();
-			randomArray[i] = rn.nextInt(10000 - 0);
+			randomArray[i] = rn.nextInt(10000);
 		}
 	}
 	
 	public int getMax(){
-		int biggest = 0;
+		int   = 0;
 		for (Integer num : randomArray) {
 			if(num > biggest)
 				biggest = num;

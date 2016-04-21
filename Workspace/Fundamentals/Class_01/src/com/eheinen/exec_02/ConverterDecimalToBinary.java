@@ -11,7 +11,7 @@ package com.eheinen.exec_02;
  */
 
 public class ConverterDecimalToBinary {
-	public String Convert(int decimal){
+	public String convert(int decimal){
 		String binarySequence = "";
 		
 		while(decimal > 0){

@@ -10,7 +10,7 @@ public class Main {
 		String data = new Customer("1", "2", "3", "4").toString();
 		System.out.println(data);
 		
-		String binary = new ConverterDecimalToBinary().Convert(255);
+		String binary = new ConverterDecimalToBinary().convert(12);
 		System.out.println(binary);
 		
 		Calculate calc = new Calculate();
