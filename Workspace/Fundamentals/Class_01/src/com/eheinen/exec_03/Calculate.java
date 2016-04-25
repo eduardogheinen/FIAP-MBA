@@ -21,7 +21,7 @@ public class Calculate {
 	}
 	
 	public int getMax(){
-		int   = 0;
+		int biggest = 0;
 		for (Integer num : randomArray) {
 			if(num > biggest)
 				biggest = num;
