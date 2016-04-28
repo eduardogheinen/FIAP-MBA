@@ -5,13 +5,13 @@ import javax.swing.JOptionPane;
 import com.eheinen.utils.MyUtils;
 
 /**
- * Construa um programa que crie um vetor para coletar informações de salários de
- * determinados funcionários. O programa inicialmente deverá questionar a
- * quantidade de funcionários que servirá para determinar o tamanho do vetor.
- * Após isso, será questionado o salário para cada funcionário deste vetor. Ao final,
- * o programa deverá informar a média salarial da empresa.
+ * Construa um programa que crie um vetor para coletar informacoes de salarios de
+ * determinados funcionarios. O programa inicialmente devera questionar a
+ * quantidade de funcionarios que servira para determinar o tamanho do vetor.
+ * Apos isso, sera questionado o salario para cada funcionario deste vetor. Ao final,
+ * o programa devera informar a media salarial da empresa.
  * Nota: utilize o comando JOptionPane.showInputDialog para a entrada de dados.
- * Como este comando retorna o tipo String, faça a conversão de tipos apropriada (classes wrappers).
+ * Como este comando retorna o tipo String, faca a conversao de tipos apropriada (classes wrappers).
  * 
  * @author Eduardo Heinen
  */

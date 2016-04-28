@@ -17,13 +17,13 @@ public class Main {
 		// c = 2
 		
 		// Task 3:
-		//Question_03 question_03 = new Question_03();
-		//question_03.salaryAverage();
+		Question_03 question_03 = new Question_03();
+		question_03.salaryAverage();
 		
 		// Task 5:
 		// I used BigInteger because after 32! there is 32bit overflow.
-		Question_05 question = new Question_05();
-		question.calcFactorial();
+		//Question_05 question = new Question_05();
+		//question.calcFactorial();
 	}
 
 }

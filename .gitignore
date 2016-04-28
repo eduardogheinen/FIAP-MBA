@@ -1,3 +1,5 @@
 Workspace/.metadata/**
 Workspace/.recommenders/**
 Workspace/RemoteSystemsTempFiles/.project
+*.log
+*.lock

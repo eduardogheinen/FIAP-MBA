@@ -3,8 +3,8 @@ package com.eheinen.questions;
 import com.eheinen.utils.MyUtils;
 
 /**
- * Crie um programa que leia a seqüência de um determinado vetor (array) e
- * depois escreva, em seqüência inversa, em outro vetor. Por exemplo, se o vetor A = {1,2,3}, então vetor B = {3,2,1}.
+ * Crie um programa que leia a sequencia de um determinado vetor (array) e
+ * depois escreva, em sequencia inversa, em outro vetor. Por exemplo, se o vetor A = {1,2,3}, entao vetor B = {3,2,1}.
  * 
  * @author Eduardo Heinen
  */

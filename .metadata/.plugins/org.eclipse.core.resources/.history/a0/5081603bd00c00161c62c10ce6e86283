@@ -1,0 +1,12 @@
+package com.eheinen.main;
+
+import com.eheinen.exec_01.SavingAccount;
+
+public class Main {
+
+	public static void main(String args[]){
+		// Exercise 1:
+		SavingAccount savingAccount = new SavingAccount("Eduardo Heinen", "Paulista Avenue", "000.000.000-00");
+		savingAccount.equals("000.000.000-00")
+	}
+}

@@ -1,0 +1,13 @@
+package com.eheinen.exec_01;
+
+public class SavingAccount extends BankAccount{
+
+	public SavingAccount(String clientName, String clientAddress, String clientCPF) {
+		super(clientName, clientAddress, clientCPF);
+	}
+	
+	@Override
+	public boolean equals(Object clientCPF) {
+		return this.clientCPF.equals(clientCPF);
+	}
+}
