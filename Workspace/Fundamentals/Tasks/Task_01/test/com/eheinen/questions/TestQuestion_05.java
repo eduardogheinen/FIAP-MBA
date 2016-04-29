@@ -8,6 +8,12 @@ import static org.hamcrest.MatcherAssert.*;
 
 import org.junit.Test;
 
+/**
+ * 
+ * @author Eduardo Heinen
+ *
+ */
+
 public class TestQuestion_05 {
 
 	@Test

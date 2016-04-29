@@ -5,6 +5,12 @@ import static org.hamcrest.MatcherAssert.*;
 
 import org.junit.Test;
 
+/**
+ * 
+ * @author Eduardo Heinen
+ *
+ */
+
 public class TestQuestion_03 {
 
 	@Test
