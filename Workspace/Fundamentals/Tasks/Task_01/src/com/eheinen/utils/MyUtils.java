@@ -1,7 +1,5 @@
 package com.eheinen.utils;
 
-import java.util.Random;
-
 /**
  * 
  * @author Eduardo Heinen
@@ -9,16 +7,13 @@ import java.util.Random;
  */
 
 public class MyUtils {
-
-	public int[] buildRandomArray(int amount){
-		int[] randomArray = new int[amount];
-		for (int i=0; i<randomArray.length; i++) {
-			int num = new Random().nextInt(10000);
-			randomArray[i] = num;
-		}
-		return randomArray;
-	}
 	
+	/**
+	 * Responsible for build a sequencial array through a number passed and with amount passed either.
+	 * @param number Number initial to start the senquence.
+	 * @param amount Amount of sequencial numbers.
+	 * @return Sequencial Array
+	 */
 	public int[] buildSequencialArray(int number, int amount){
 		int[] sequencialArray = new int[amount];
 		for (int i=0; i<sequencialArray.length; i++) {
@@ -27,6 +22,10 @@ public class MyUtils {
 		return sequencialArray;
 	}
 	
+	/**
+	 * Responsible for print in console all values in an integer array.
+	 * @param myArray Integer array to be printed.
+	 */
 	public void printArray(int[] myArray){
 		System.out.println("Start to print:");
 		for (int i : myArray) {
@@ -35,6 +34,11 @@ public class MyUtils {
 		System.out.println("End to print.\n");
 	}
 	
+	/**
+	 * Responsible for validate is a number passed is a double valid
+	 * @param number Number to be validated.
+	 * @return True is a valid double or False is invalid double.
+	 */
 	public boolean isValidDouble(String number){
 		try {
 		    Double.parseDouble(number);
@@ -44,6 +48,11 @@ public class MyUtils {
 		}
 	}
 	
+	/**
+	 * Responsible for validate is a number passed is a integer valid
+	 * @param number Number to be validated.
+	 * @return True is a valid integer or False is invalid integer.
+	 */
 	public boolean isValidInteger(String number){
 		try {
 		    Integer.parseInt(number);
@@ -53,6 +62,12 @@ public class MyUtils {
 		}
 	}
 	
+	/**
+	 * Responsible for compare the operator passed to return the correct enumeration to be calculated.
+	 * @param operator Operator to be validated.
+	 * @return The correct enum related to the operator passed.
+	 * @throws WrongOptionException If the user passes a wrong operator.
+	 */
 	public OperatorEnum getOperator(String operator) throws WrongOptionException{
 		if(OperatorEnum.SUM.getOperator().equals(operator))
 			return OperatorEnum.SUM;
