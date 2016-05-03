@@ -5,7 +5,7 @@ import java.time.temporal.ChronoUnit;
 
 import com.eheinen.exec_01.Exercise_01;
 
-public class Main {
+public class MainExec01 {
 
 	public static void main(String args[]){
 		
