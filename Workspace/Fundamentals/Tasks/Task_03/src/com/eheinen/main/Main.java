@@ -1,14 +1,18 @@
 package com.eheinen.main;
 
+import java.util.ArrayList;
+
 import com.eheinen.questions.DateFormat;
 import com.eheinen.questions.Question_02;
 import com.eheinen.questions.Question_03;
+import com.eheinen.questions.Question_04;
 import com.eheinen.questions.question03.ArrayListPerf;
 import com.eheinen.questions.question03.HashMapPerf;
 import com.eheinen.questions.question03.HashSetPerf;
 import com.eheinen.questions.question03.LinkedListPerf;
 import com.eheinen.questions.question03.StackPerf;
 import com.eheinen.questions.question03.WeakHashMapPerf;
+import com.eheinen.questions.question04.Person;
 
 public class Main {
 
@@ -48,6 +52,16 @@ public class Main {
 		LinkedListPerf linkedList = new LinkedListPerf();
 		StackPerf stack = new StackPerf();
 		WeakHashMapPerf weakHashMap = new WeakHashMapPerf(); 
+		
+		
+		// Task 4:
+		
+		Question_04 question_04 = new Question_04();
+		question_04.buildArrayList().forEach(l -> System.out.println(l));
+		question_04.shuffleAndRemove();
+		question_04.sortByName();
+		question_04.reverseByName();
+		
 		
 		
 	}
