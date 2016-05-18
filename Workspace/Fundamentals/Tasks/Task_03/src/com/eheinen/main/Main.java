@@ -1,11 +1,13 @@
 package com.eheinen.main;
 
+import java.io.IOException;
 import java.util.ArrayList;
 
 import com.eheinen.questions.DateFormat;
 import com.eheinen.questions.Question_02;
 import com.eheinen.questions.Question_03;
 import com.eheinen.questions.Question_04;
+import com.eheinen.questions.Question_05;
 import com.eheinen.questions.question03.ArrayListPerf;
 import com.eheinen.questions.question03.HashMapPerf;
 import com.eheinen.questions.question03.HashSetPerf;
@@ -45,13 +47,20 @@ public class Main {
 		
 		
 		// Task 3:
-		Question_03 question_03 = new Question_03();
-		ArrayListPerf arrayList = new ArrayListPerf();
-		HashMapPerf hashMap = new HashMapPerf();
-		HashSetPerf hashSet = new HashSetPerf();
-		LinkedListPerf linkedList = new LinkedListPerf();
-		StackPerf stack = new StackPerf();
-		WeakHashMapPerf weakHashMap = new WeakHashMapPerf(); 
+		// In test source folder there are some tests:
+		//
+		// Include:
+		// 
+		// ArrayList x LinkedList = LinkedList
+		// Stack x HashSet = Hashset
+		// HashMap x WeakHashMap = HashMap
+		//  
+		// Search:
+		// 
+		// ArrayList x LinkedList = ArrayList
+		// Stack x HashSet = Hashset
+		// HashMap x WeakHashMap = WeakHashMap   
+		 
 		
 		
 		// Task 4:
@@ -63,6 +72,15 @@ public class Main {
 		question_04.reverseByName();
 		
 		
+		// Task 5:
+		
+		Question_05 question_05 = new Question_05();
+		try {
+			question_05.encode();
+			question_05.decode();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 		
 	}
 	

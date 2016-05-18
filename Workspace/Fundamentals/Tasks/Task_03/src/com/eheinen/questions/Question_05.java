@@ -1,4 +1,17 @@
 package com.eheinen.questions;
+
+import java.io.BufferedWriter;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.io.UnsupportedEncodingException;
+import java.io.Writer;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
+import javax.swing.JOptionPane;
+
 /**
  * 
  * Desenvolva um sistema baseado em criptografia que tem o objetivo de codificar
@@ -18,4 +31,30 @@ package com.eheinen.questions;
 
 public class Question_05 {
 
+	public void encode() throws UnsupportedEncodingException, FileNotFoundException, IOException{
+		StringBuilder textEncode;
+		textEncode = new StringBuilder(JOptionPane.showInputDialog("Insert your message:"));
+		
+		for(int i=0; i<textEncode.length(); i++){
+			textEncode.setCharAt(i, (char) (textEncode.charAt(i) + 1));
+		}
+		this.writeFile(textEncode, "EncodedMessage");
+	}
+	
+	public void decode() throws IOException{
+		StringBuilder textDecode = new StringBuilder(new String(Files.readAllBytes(Paths.get("C:\\Temp\\EncodedMessage.txt"))));
+		for(int i=0; i<textDecode.length(); i++){
+			textDecode.setCharAt(i, (char) (textDecode.charAt(i) - 1));
+		}		
+		this.writeFile(textDecode, "DecodedMessage");
+	}
+	
+	private void writeFile(StringBuilder text, String fileName) throws UnsupportedEncodingException, FileNotFoundException, IOException{
+		try (Writer writer = new BufferedWriter(new OutputStreamWriter(
+            new FileOutputStream("C:\\Temp\\" + fileName + ".txt"), "utf-8"))
+		){
+			writer.write(text.toString());
+		}
+	}
+	
 }
